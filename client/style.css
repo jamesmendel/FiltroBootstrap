@@ -1,7 +1,15 @@
 /*Image Slider*/
-img{
-  height:100px;
+.carousel-inner > .item > img {
+  width:350px;
+  height:250px;
 }
-body{
-  background-color: blue;
+.carousel {
+  width:350px;
+  height:250px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-pills{
+    display: none;
+  }
 }
