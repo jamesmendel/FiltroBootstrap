@@ -1,0 +1,66 @@
+<template name="layout">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Filtronetics</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Product / RFQ</a></li>
+          <li><a href="#">Services</a></li>
+            <!--Begin Help Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Directions</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Equipment For Sale</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Employment</a></li>
+            </ul>
+          </li>
+            <!-- End Help Dropdown -->
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Info Center</a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-1">
+  <ul class="nav nav-pills nav-stacked">
+    <li role="presentation">Products</li>
+    <li role="presentation"><a href="#">Filters</a></li>
+    <li role="presentation"><a href="#">Ceramics</a></li>
+    <li role="presentation"><a href="#">Oscillators</a></li>
+    <li role="presentation"><a href="#">Saws</a></li>
+    <li role="presentation"><a href="#">Crystals</a></li>
+    <li role="presentation"><a href="#">Miniature Monolithics</a></li>
+    <li role="presentation"><a href="#">Overstocked Components</a></li>
+    <li role="presentation"><a href="#">Standard Packages</a></li>
+    <li role="presentation"><a href="#">Qualification & Screening Tests</a></li>
+  </ul>
+</div>
+<div class="col-md-6">
+  {{> yield}}
+</div>
+<div class="col-md-3"></div>
+</div>
+
+
+</template>
